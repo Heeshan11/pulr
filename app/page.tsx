@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/app/assets/Logo + Tagline.svg";
+import logo from "@/public/assets/Logo + Tagline.svg";
 
 export default function Home() {
   return (
