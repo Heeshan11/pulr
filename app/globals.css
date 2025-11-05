@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.bg-gradient-custom {
+  background: linear-gradient(
+    135deg,
+    #7B2FF7 0%,
+    #7B2FF7 50%,
+    #DF23FF 100%
+  );
+}
+
+.dark .bg-gradient-custom-dark {
+  background: linear-gradient(
+    135deg,
+    #7B2FF7 0%,
+    #7B2FF7 50%,
+    #DF23FF 100%
+  );
+}
