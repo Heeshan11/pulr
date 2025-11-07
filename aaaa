@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appID":"DSAKBH8JLV.co.pulr.app",
+                "paths":["*"]
+            }
+        ]
+    }
+}
