@@ -7,7 +7,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const filePath = path.join(process.cwd(), "public/.well-known/apple-app-site-association");
     const fileContent = fs.readFileSync(filePath, "utf8");
 
-    // FORCE JSON content-type
+    // Force JSON content type
     res.setHeader("Content-Type", "application/json");
     res.status(200).send(fileContent);
   } catch (err) {
