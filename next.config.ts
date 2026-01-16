@@ -1,16 +1,19 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "standalone",
-
-  async rewrites() {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  async headers() {
     return [
       {
-        source: "/.well-known/apple-app-site-association",
-        destination: "/api/apple-app-site-association",
+        // This matches the exact path
+        source: '/.well-known/apple-app-site-association',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/json',
+          },
+        ],
       },
     ];
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
